@@ -1,31 +1,184 @@
+/* ---------- Base styles ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #06263d;
-    color: white;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #082336;
+  color: #f2f2f2;
+  line-height: 1.6;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: #ffffff;
+  color: #082336;
+  padding: 8px 12px;
+  z-index: 1000;
+  border-radius: 4px;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+}
+
+/* ---------- Header ---------- */
+
+header {
+  background: #103b56;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.7rem;
+}
+
+.tagline {
+  margin-top: 4px;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+/* ---------- Navigation ---------- */
+
+nav {
+  margin-top: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #eaf7ff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  font-weight: 500;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+nav a[aria-current="page"] {
+  background: #ffffff;
+  color: #082336;
+}
+
+/* ---------- Main content ---------- */
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+
+h3 {
+  margin-top: 1rem;
+  font-size: 1.15rem;
+}
+
+/* Page section cards */
+section {
+  background: #103b56;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+/* Text links */
+.text-link {
+  color: #b9e4ff;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background: #ffffff;
+  color: #082336;
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #e2e2e2;
+}
+
+/* ---------- Grid layout (Home page) ---------- */
+
+.grid {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.grid.three-col {
+  grid-template-columns: 1fr;
+}
+
+/* Larger screens */
+@media (min-width: 700px) {
+  .grid.three-col {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  header, footer {
-    background: #0a4065;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    gap: 1rem;
-    list-style: none;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  main {
-    padding: 1rem;
-  }
-  
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  background: #061822;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  color: #d7e7f2;
+}
+.home-back-button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background: #ffffff;
+  color: #06263d;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.home-back-button:hover,
+.home-back-button:focus {
+  background: #e8e8e8;
+  border-color: #06263d;
+}

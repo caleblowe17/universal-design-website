@@ -3,31 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>What is Universal Design</title>
+  <title>Universal Design Lab – What</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <header>
-    <h1>What is Universal Design?</h1>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <nav>
-      <ul>
+  <header>
+    <div class="site-title">
+      <h1>Universal Design Lab</h1>
+      <p class="tagline">Web for everyone, by everyone.</p>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
-        <li><a href="what.html">What</a></li>
+        <li><a href="what.html" aria-current="page">What</a></li>
         <li><a href="why.html">Why</a></li>
         <li><a href="how.html">How</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <h2>Definition</h2>
-    <p>Universal Design means creating digital experiences usable by the widest range of people.</p>
+  <main id="main">
+    <section class="page-header">
+      <h2>What is Universal Design?</h2>
+      <p>
+        Universal design is about creating digital experiences that work for
+        as many people as possible from day one, instead of “fixing” them later.
+      </p>
+    </section>
+
+    <section>
+      <h3>Core idea</h3>
+      <p>
+        Instead of designing for some “average user,” universal design accepts
+        that real users have different bodies, devices, speeds, attention spans,
+        and access needs. A universally designed site stays usable across all
+        of that.
+      </p>
+    </section>
+
+    <section>
+      <h3>Key principles (translated for devs)</h3>
+      <ul>
+        <li><strong>Perceivable:</strong> Content can be seen or heard in more than one way.</li>
+        <li><strong>Operable:</strong> People can use it with a mouse, keyboard, or assistive tech.</li>
+        <li><strong>Understandable:</strong> Clear language, predictable navigation, and helpful feedback.</li>
+        <li><strong>Robust:</strong> Works across browsers, devices, and assistive technologies.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Everyday examples</h3>
+      <ul>
+        <li>Captions on videos (not just for Deaf users, but also for muted phones).</li>
+        <li>Readable text and good contrast (better for everyone in bright light).</li>
+        <li>Logical heading structure (helps both screen readers and scanning with your eyes).</li>
+        <li>Buttons with real labels instead of mysterious icons.</li>
+      </ul>
+    </section>
   </main>
 
   <footer>
-    <p>Designed for everyone.</p>
+    <p>Universal Design Lab · Understanding comes before shipping.</p>
   </footer>
 </body>
 </html>

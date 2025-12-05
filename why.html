@@ -3,31 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Why Universal Design</title>
+  <title>Universal Design Lab – Why</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <header>
-    <h1>Why Universal Design?</h1>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <nav>
-      <ul>
+  <header>
+    <div class="site-title">
+      <h1>Universal Design Lab</h1>
+      <p class="tagline">Web for everyone, by everyone.</p>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="what.html">What</a></li>
-        <li><a href="why.html">Why</a></li>
+        <li><a href="why.html" aria-current="page">Why</a></li>
         <li><a href="how.html">How</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <h2>Why It Matters</h2>
-    <p>Universal Design ensures digital spaces work for everyone, regardless of ability.</p>
+  <main id="main">
+    <section class="page-header">
+      <h2>Why Universal Design Matters</h2>
+      <p>
+        The web has always leveled up when regular people demanded better: CSS
+        Zen Garden for design, web standards for clean code, HTML5 for real
+        content structure. Universal design is the next push.
+      </p>
+    </section>
+
+    <section>
+      <h3>1. Real people, real barriers</h3>
+      <p>
+        For some users, a missing label, low contrast, or keyboard-only trap
+        isn’t just “annoying,” it’s a hard stop. If someone can’t check a form,
+        read your content, or operate your menu, they’re basically locked out.
+      </p>
+    </section>
+
+    <section>
+      <h3>2. Good UX for everyone</h3>
+      <p>
+        Universal design doesn’t just help disabled users. It also helps:
+      </p>
+      <ul>
+        <li>People on cracked screens or old devices.</li>
+        <li>Students scrolling websites in loud spaces with audio off.</li>
+        <li>People with ADHD, anxiety, or visual processing differences.</li>
+        <li>Anyone who just wants a site that “makes sense” quickly.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>3. Future-proofing the web</h3>
+      <p>
+        Our generation is shipping the sites that will become somebody else’s
+        legacy code. Basing that work on universal design means the web keeps
+        moving toward being more open, not less.
+      </p>
+    </section>
+
+    <section>
+      <h3>4. Ethics, laws, and reputation</h3>
+      <p>
+        Accessibility lawsuits are rising, and guidelines like WCAG set clear
+        expectations, but this is also about what kind of web we want to build.
+        A site that welcomes more people is simply a better reflection of the
+        world we live in.
+      </p>
+    </section>
   </main>
 
   <footer>
-    <p>Designed for everyone.</p>
+    <p>Universal Design Lab · Because exclusion should never be a design choice.</p>
   </footer>
 </body>
 </html>

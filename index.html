@@ -3,17 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Universal Design Website – Home</title>
+  <title>Universal Design Lab – Home</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <header>
-    <h1>Universal Design Website</h1>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
+  <header>
+    <a class="home-back-button" href="https://caleblowe17.github.io/UniversalDesign">
+      Back to Main Page
+    </a>
+    
+    <div class="site-title">
+      <h1>Universal Design Lab</h1>
+      <p class="tagline">Web for everyone, by everyone.</p>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="what.html">What</a></li>
         <li><a href="why.html">Why</a></li>
         <li><a href="how.html">How</a></li>
@@ -21,13 +28,65 @@
     </nav>
   </header>
 
-  <main>
-    <h2>Welcome</h2>
-    <p>This website introduces Universal Design and how to apply it to modern digital experiences.</p>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-text">
+        <h2 id="hero-heading">Design that doesn’t leave anyone out.</h2>
+        <p>
+          This site is made for developers and designers who actually care about
+          the people using their work. Universal design is how we move the web
+          from “cool” to truly inclusive.
+        </p>
+      </div>
+    </section>
+
+    <section class="grid three-col" aria-label="Overview of the site">
+      <article>
+        <h3>What is Universal Design?</h3>
+        <p>
+          A mindset and a practice: build experiences that work for the widest
+          range of people, from the start. Not as an afterthought.
+        </p>
+        <a class="text-link" href="what.html">Learn the basics →</a>
+      </article>
+
+      <article>
+        <h3>Why it matters now</h3>
+        <p>
+          The web has always evolved through grassroots movements: CSS Zen
+          Garden, web standards, HTML5. Universal design is the next wave.
+        </p>
+        <a class="text-link" href="why.html">See the case →</a>
+      </article>
+
+      <article>
+        <h3>How to ship accessible work</h3>
+        <p>
+          From semantic HTML and color contrast to keyboard support and testing
+          tools, you’ll find practical steps you can use today.
+        </p>
+        <a class="text-link" href="how.html">Get the playbook →</a>
+      </article>
+    </section>
+
+    <section class="meta-section" aria-labelledby="meta-heading">
+      <h2 id="meta-heading">This site as a case study (META)</h2>
+      <p>
+        This project is designed to practice what it preaches: mobile-first,
+        responsive layout, semantic structure, keyboard-friendly navigation,
+        and contrast that doesn’t make anyone squint.
+      </p>
+      <ul>
+        <li>Mobile-first CSS (starts simple, scales up)</li>
+        <li>Responsive layout using flexible widths and gaps</li>
+        <li>Skip link and proper landmarks for screen readers</li>
+        <li>Consistent navigation across multiple pages</li>
+      </ul>
+    </section>
   </main>
 
   <footer>
-    <p>Designed for everyone.</p>
+    <p>Universal Design Lab · Caleb Lwoe.</p>
   </footer>
 </body>
 </html>
